@@ -8,7 +8,7 @@ export default SignIn = ({ navigation }) => {
 
   function submitHandle() {
     console.log(account, password)
-    // navigation.navigate('Layout')
+    navigation.navigate('Layout')
   }
 
   return (
