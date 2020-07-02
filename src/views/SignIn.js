@@ -31,7 +31,9 @@ export default SignIn = ({ navigation }) => {
               <TextInput style={style.ipt} onChangeText={value => setPassword(value)} secureTextEntry={true} placeholder='密码' placeholderTextColor='#E6E6E6' />
             </View>
           </View>
-          <JoBottom disabled={!account || !password} onPress={submitHandle} />
+          <View style={{ marginTop: 40 }}>
+            <JoBottom disabled={!account || !password} onPress={submitHandle} style={{ marginTop: 40 }} />
+          </View>
         </View>
       </SafeAreaView>
     </>

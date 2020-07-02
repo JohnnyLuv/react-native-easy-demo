@@ -1,20 +1,20 @@
 import React from 'react'
-import { StyleSheet, View, Text } from 'react-native'
+import { StyleSheet, SafeAreaView, ScrollView, View, Text } from 'react-native'
 
 export default Center = () => {
   return (
-    <>
-      <View style={style.center}>
-        <Text>Center Page</Text>
-      </View>
-    </>
+    <SafeAreaView>
+      <ScrollView>
+        <View>
+          <Text style={style.text}>Center Page</Text>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   )
 }
 
 const style = StyleSheet.create({
-  center: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+  text: {
+    color: '#fff'
   }
 })

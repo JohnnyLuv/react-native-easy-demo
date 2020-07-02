@@ -1,20 +1,20 @@
 import React from 'react'
-import { StyleSheet, View, Text } from 'react-native'
+import { StyleSheet, SafeAreaView, ScrollView, View, Text } from 'react-native'
 
 export default Assets = () => {
   return (
-    <>
-      <View style={style.center}>
-        <Text>Assets Page</Text>
-      </View>
-    </>
+    <SafeAreaView>
+      <ScrollView>
+        <View>
+          <Text style={style.text}>Assets Page</Text>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   )
 }
 
 const style = StyleSheet.create({
-  center: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+  text: {
+    color: '#fff'
   }
 })
