@@ -1,20 +1,23 @@
 import React from 'react'
-import { StyleSheet, StatusBar, View, Text } from 'react-native'
+import { StyleSheet, StatusBar, ScrollView, View, Text } from 'react-native'
 
 export default Home = () => {
   return (
     <>
-      <View style={style.center}>
-        <Text>Home Page</Text>
-      </View>
+      <StatusBar barStyle='light-content' />
+      <ScrollView style={style.wrap}>
+        <Text style={style.text}>Home Page</Text>
+      </ScrollView>
     </>
   )
 }
 
 const style = StyleSheet.create({
-  center: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+  wrap: {
+    backgroundColor: '#19100F',
+    paddingTop: 44
+  },
+  text: {
+    color: '#fff'
   }
 })
