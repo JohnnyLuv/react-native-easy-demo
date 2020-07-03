@@ -31,7 +31,6 @@ export default Home = () => {
           <Image style={style.swiper.item} source={require('../assets/image/banner/banner1.jpg')} />
         </Swiper>
 
-
         <View style={style.menu.cover}>
           {menuList.map(item => (
             <View style={style.menu.item} key={item.text}>
