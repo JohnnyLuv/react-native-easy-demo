@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 import Home from './Home'
 import Assets from './Assets'
-import Center from './Center'
+import Mine from './Mine'
 
 const Tab = createBottomTabNavigator()
 export default Layout = ({ navigation }) => {
@@ -38,10 +38,10 @@ export default Layout = ({ navigation }) => {
 
   return (
     <>
-      <Tab.Navigator initialRouteName='资产' screenOptions={screenOptions} tabBarOptions={tabBarOptions}>
+      <Tab.Navigator initialRouteName='我的' screenOptions={screenOptions} tabBarOptions={tabBarOptions}>
         <Tab.Screen name="首页" component={Home} />
         <Tab.Screen name="资产" component={Assets} />
-        <Tab.Screen name="我的" component={Center} />
+        <Tab.Screen name="我的" component={Mine} />
       </Tab.Navigator>
     </>
   )
