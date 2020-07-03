@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { SafeAreaView, StyleSheet, View, Text, TextInput } from 'react-native'
-import { JoBottom } from '../components/jo-ui'
+import { JoButtom } from '../components/jo-ui'
 
 export default SignIn = ({ navigation }) => {
   const [account, setAccount] = useState('')
@@ -31,9 +31,7 @@ export default SignIn = ({ navigation }) => {
               <TextInput style={style.ipt} onChangeText={value => setPassword(value)} secureTextEntry={true} placeholder='密码' placeholderTextColor='#E6E6E6' />
             </View>
           </View>
-          <View style={{ marginTop: 40 }}>
-            <JoBottom disabled={!account || !password} onPress={submitHandle} style={{ marginTop: 40 }} />
-          </View>
+          <JoButtom disabled={!account || !password} onPress={submitHandle} style={{ marginTop: 40 }} />
         </View>
       </SafeAreaView>
     </>

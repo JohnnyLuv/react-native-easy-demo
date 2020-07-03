@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, SafeAreaView, ScrollView, View, Image, Text } from 'react-native'
 import Swiper from 'react-native-swiper'
 import LinearGradient from 'react-native-linear-gradient'
-import { JoBottom } from '../components/jo-ui'
+import { JoButtom } from '../components/jo-ui'
 
 export default Home = () => {
   const swiperConfig = {
@@ -50,7 +50,7 @@ export default Home = () => {
                 <Text style={style.price.num}>0.86</Text>
                 <Text style={style.price.after}>USDT</Text>
               </View>
-              <View style={{ width: 145, marginTop: 20, }}><JoBottom text='发圈领PB' /></View>
+              <JoButtom text='发圈领PB' style={{ width: 145, marginTop: 20, }} />
             </View>
           </LinearGradient>
         </View>

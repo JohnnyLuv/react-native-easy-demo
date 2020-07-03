@@ -1,5 +1,5 @@
-import JoBottom from './JoBottom'
+import JoButtom from './JoButton'
 
 export {
-  JoBottom
+  JoButtom
 }
