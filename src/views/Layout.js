@@ -13,15 +13,15 @@ export default Layout = ({ navigation }) => {
     tabBarIcon: ({ focused, color, size }) => {
       // You can return any component that you like here!
       switch (route.name) {
-        case 'Home':
+        case '首页':
           return focused
             ? <Image source={require('../assets/image/bottom-bar/home2.png')} style={{ width: size, height: size }} />
             : <Image source={require('../assets/image/bottom-bar/home1.png')} style={{ width: size, height: size }} />
-        case 'Assets':
+        case '资产':
           return focused
             ? <Image source={require('../assets/image/bottom-bar/assets2.png')} style={{ width: size, height: size }} />
             : <Image source={require('../assets/image/bottom-bar/assets1.png')} style={{ width: size, height: size }} />
-        case 'Center':
+        case '我的':
           return focused
             ? <Image source={require('../assets/image/bottom-bar/mine2.png')} style={{ width: size, height: size }} />
             : <Image source={require('../assets/image/bottom-bar/mine1.png')} style={{ width: size, height: size }} />
@@ -33,15 +33,15 @@ export default Layout = ({ navigation }) => {
   const tabBarOptions = {
     activeTintColor: '#FD3337', // 激活的颜色
     inactiveTintColor: '#E6E6E6', // 默认的颜色
-    style: { backgroundColor: '#000E28' }, // 包含安全区背景色
+    style: { backgroundColor: '#2E2B2B' }, // 包含安全区背景色
   }
 
   return (
     <>
       <Tab.Navigator screenOptions={screenOptions} tabBarOptions={tabBarOptions}>
-        <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="Assets" component={Assets} />
-        <Tab.Screen name="Center" component={Center} />
+        <Tab.Screen name="首页" component={Home} />
+        <Tab.Screen name="资产" component={Assets} />
+        <Tab.Screen name="我的" component={Center} />
       </Tab.Navigator>
     </>
   )
