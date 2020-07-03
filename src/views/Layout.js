@@ -38,7 +38,7 @@ export default Layout = ({ navigation }) => {
 
   return (
     <>
-      <Tab.Navigator initialRouteName='我的' screenOptions={screenOptions} tabBarOptions={tabBarOptions}>
+      <Tab.Navigator initialRouteName='首页' screenOptions={screenOptions} tabBarOptions={tabBarOptions}>
         <Tab.Screen name="首页" component={Home} />
         <Tab.Screen name="资产" component={Assets} />
         <Tab.Screen name="我的" component={Mine} />
